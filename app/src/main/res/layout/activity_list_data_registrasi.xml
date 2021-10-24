@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListDataRegistrasi">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_above="@+id/recyclerviewregis"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/round_header" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewregis"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="534dp"
+        android:backgroundTint="@color/white"
+        android:shadowColor="#FFFFFF"
+        android:text="+"
+        android:textColor="@color/ungu_tua"
+        android:textSize="20sp"
+        app:cornerRadius="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="591dp"
+        app:srcCompat="@drawable/logo_healing" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="545dp"
+        android:text="@string/apptittle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
